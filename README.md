@@ -25,39 +25,39 @@ The program handles various cases of input text. Here are some examples of how i
 
 1. Basic English text:
    Input: "Hello World"
-   Output: "hello-world"
+   .Output: "hello-world"
 
 2. Vietnamese text with diacritics:
    Input: "Xin chào thế giới"
-   Output: "xin-chao-the-gioi"
+   .Output: "xin-chao-the-gioi"
 
 3. Mixed case text:
    Input: "This is a TEST"
-   Output: "this-is-a-test"
+   .Output: "this-is-a-test"
 
 4. Vietnamese text with mixed case:
    Input: "Đây là MỘT câu TIẾNG Việt"
-   Output: "day-la-mot-cau-tieng-viet"
+   .Output: "day-la-mot-cau-tieng-viet"
 
 5. Text with spaces and punctuation:
    Input: "Spaces   and  !@#$%^&*()  Punctuation"
-   Output: "spaces-and-punctuation"
+   .Output: "spaces-and-punctuation"
 
 6. Text with non-letter prefix:
    Input: "1. Hello World"
-   Output: "hello-world"
+   .Output: "hello-world"
 
 7. Vietnamese text with non-letter prefix:
    Input: "2. Xin chào"
-   Output: "xin-chao"
+   .Output: "xin-chao"
 
 8. Text with numbers and special characters:
    Input: "H3llo W0rld! Spec!al Ch@rs"
-   Output: "h3llo-w0rld-spec-al-ch-rs"
+   .Output: "h3llo-w0rld-spec-al-ch-rs"
 
 9. Preserving case for non-Vietnamese characters:
    Input: "IBM and VIỆT NAM"
-   Output: "ibm-and-viet-nam"
+   .Output: "ibm-and-viet-nam"
 
 These examples demonstrate how the program:
 - Converts text to lowercase (except for non-Vietnamese uppercase characters)
@@ -81,6 +81,8 @@ When using this program, ensure your `name.txt` file contains the desired names,
 go run main.go
 ```
 
+Or build the program and run the executable in the target directory:
+
 ## How to Build for Target OS
 
 To build the program for a specific operating system, you can use Go's cross-compilation feature. Here are examples for common target systems:
@@ -101,7 +103,7 @@ GOOS=darwin GOARCH=amd64 go build -o file_renamer main.go
 GOOS=linux GOARCH=amd64 go build -o file_renamer main.go
 ```
 
-Replace `amd64` with `386` for 32-bit systems if needed.
+Replace `amd64` with `arm64` for arm systems if needed.
 
 After building, transfer the executable to the target system and run it in the directory containing the files to be renamed and the `name.txt` file.
 
