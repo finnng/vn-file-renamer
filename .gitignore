@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.webp
+*.txt
+*.exe
